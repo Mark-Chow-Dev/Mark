@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style> 
+        /* div>p:not(.fail) {
+            color: green;
+        } */
+        /* div>p:not([title^="fighting"]) {
+            color: skyblue;
+        } */
+         div>p:not(:first-child) {
+            color: aqua;
+         }
+    </style>
+</head>
+<body>
+    <div>
+        <p>张三：98分</p>
+        <p>李四：88分</p>
+        <p>王五：78分</p>
+        <p>赵六：68分</p>
+        <p class="fail" title="fighting">孙七：58分</p>
+        <p class="fail" title="fighting">老八：48分</p>
+    </div>
+</body>
+</html>
